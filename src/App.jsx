@@ -14,9 +14,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#fafafa] dark:bg-navy text-navy dark:text-white font-sans relative selection:bg-teal selection:text-white transition-colors duration-500">
-      
+
       {/* Dark Mode Toggle */}
-      <button 
+      <button
         onClick={() => setIsDarkMode(!isDarkMode)}
         className="fixed top-6 right-6 z-50 p-3 rounded-full bg-white/80 dark:bg-white/10 backdrop-blur-md border border-gray-200/60 dark:border-white/20 shadow-sm transition-all hover:scale-110"
         aria-label="Toggle dark mode"
@@ -30,7 +30,7 @@ function App() {
 
       {/* Main Content Area */}
       <main className="relative flex-grow container mx-auto px-6 py-20 md:py-32 max-w-6xl flex flex-col items-center z-10">
-        
+
         {/* 1. Hero Section */}
         <section className="w-full flex flex-col items-center text-center mb-32 mt-8 animate-fade-in-up">
           <div className="mb-12">
@@ -40,16 +40,16 @@ function App() {
               <img src="/logo.png" alt="ThinkVIQ Logo" className="w-12 h-12 object-contain relative z-10" />
             </div>
           </div>
-          
+
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-navy/5 dark:bg-white/5 border border-navy/10 dark:border-white/10 mb-8 backdrop-blur-md transition-colors duration-500">
             <Sparkles className="w-4 h-4 text-teal" />
             <span className="text-xs font-semibold tracking-widest uppercase text-navy/80 dark:text-white/80">ThinkVIQ Infrastructure</span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-[5rem] font-bold tracking-tight max-w-5xl leading-[1.1] mb-6 text-transparent bg-clip-text bg-gradient-to-b from-navy to-navy/70 dark:from-white dark:to-white/70 transition-colors duration-500">
-            Building AI that <br className="hidden md:block"/> sees, thinks, and acts.
+            Building AI that <br className="hidden md:block" /> sees, thinks, and acts.
           </h1>
-          
+
           <p className="text-lg md:text-xl text-navy/60 dark:text-white/60 max-w-2xl font-medium tracking-tight mb-10 transition-colors duration-500">
             Enterprise-grade artificial intelligence infrastructure designed for scale, precision, and autonomy.
           </p>
@@ -80,38 +80,38 @@ function App() {
         {/* 3. "Currently Building" Section */}
         <section className="w-full max-w-4xl mx-auto">
           <div className="flex items-center justify-between mb-8">
-             <h2 className="text-sm font-bold tracking-widest uppercase text-navy/40 dark:text-white/40 flex items-center transition-colors duration-500">
-               <Activity className="w-4 h-4 mr-2" />
-               Active R&D Pipelines
-             </h2>
+            <h2 className="text-sm font-bold tracking-widest uppercase text-navy/40 dark:text-white/40 flex items-center transition-colors duration-500">
+              <Activity className="w-4 h-4 mr-2" />
+              Active R&D Pipelines
+            </h2>
           </div>
-          
-          <div className="rounded-2xl border border-gray-200/60 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-sm overflow-hidden shadow-sm transition-colors duration-500">
-             <div className="flex flex-col">
-                {/* Project A */}
-                <div className="group flex items-center justify-between p-6 border-b border-gray-100 dark:border-white/5 hover:bg-white/80 dark:hover:bg-white/10 transition-colors cursor-default">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-teal shadow-[0_0_8px_rgba(45,143,143,0.6)] animate-pulse"></div>
-                    <span className="font-mono font-bold text-lg tracking-tight text-navy dark:text-white transition-colors duration-500">RULEN</span>
-                  </div>
-                  <div className="flex items-center text-navy/40 dark:text-white/40 group-hover:text-teal dark:group-hover:text-teal transition-colors">
-                    <span className="text-xs uppercase tracking-wider font-semibold mr-2">Core System</span>
-                    <ChevronRight className="w-4 h-4" />
-                  </div>
-                </div>
 
-                {/* Project B */}
-                <div className="group flex items-center justify-between p-6 hover:bg-white/80 dark:hover:bg-white/10 transition-colors cursor-default">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-2 h-2 rounded-full bg-teal shadow-[0_0_8px_rgba(45,143,143,0.6)] animate-pulse" style={{animationDelay: '0.5s'}}></div>
-                    <span className="font-mono font-bold text-lg tracking-tight text-navy dark:text-white transition-colors duration-500">InsightVision</span>
-                  </div>
-                  <div className="flex items-center text-navy/40 dark:text-white/40 group-hover:text-teal dark:group-hover:text-teal transition-colors">
-                    <span className="text-xs uppercase tracking-wider font-semibold mr-2">Vision Model</span>
-                    <ChevronRight className="w-4 h-4" />
-                  </div>
+          <div className="rounded-2xl border border-gray-200/60 dark:border-white/10 bg-white/40 dark:bg-white/5 backdrop-blur-sm overflow-hidden shadow-sm transition-colors duration-500">
+            <div className="flex flex-col">
+              {/* Project A */}
+              <div className="group flex items-center justify-between p-6 border-b border-gray-100 dark:border-white/5 hover:bg-white/80 dark:hover:bg-white/10 transition-colors cursor-default">
+                <div className="flex items-center space-x-4">
+                  <div className="w-2 h-2 rounded-full bg-teal shadow-[0_0_8px_rgba(45,143,143,0.6)] animate-pulse"></div>
+                  <span className="font-mono font-bold text-lg tracking-tight text-navy dark:text-white transition-colors duration-500">RULEN</span>
                 </div>
-             </div>
+                <div className="flex items-center text-navy/40 dark:text-white/40 group-hover:text-teal dark:group-hover:text-teal transition-colors">
+                  <span className="text-xs uppercase tracking-wider font-semibold mr-2">Core System</span>
+                  <ChevronRight className="w-4 h-4" />
+                </div>
+              </div>
+
+              {/* Project B */}
+              <div className="group flex items-center justify-between p-6 hover:bg-white/80 dark:hover:bg-white/10 transition-colors cursor-default">
+                <div className="flex items-center space-x-4">
+                  <div className="w-2 h-2 rounded-full bg-teal shadow-[0_0_8px_rgba(45,143,143,0.6)] animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                  <span className="font-mono font-bold text-lg tracking-tight text-navy dark:text-white transition-colors duration-500">InsightVision</span>
+                </div>
+                <div className="flex items-center text-navy/40 dark:text-white/40 group-hover:text-teal dark:group-hover:text-teal transition-colors">
+                  <span className="text-xs uppercase tracking-wider font-semibold mr-2">Vision Model</span>
+                  <ChevronRight className="w-4 h-4" />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -130,8 +130,8 @@ function App() {
           </div>
           <div className="flex items-center space-x-6">
             <span className="text-navy/30 dark:text-white/30 transition-colors duration-500">|</span>
-            <a href="mailto:hello@thinkviq.com" className="text-navy/60 dark:text-white/60 hover:text-teal dark:hover:text-teal transition-colors font-mono">
-              hello@thinkviq.com
+            <a href="mailto:syedburhanahmedd@gmail.com" className="text-navy/60 dark:text-white/60 hover:text-teal dark:hover:text-teal transition-colors font-mono">
+              syedburhanahmedd@gmail.com
             </a>
           </div>
         </div>
